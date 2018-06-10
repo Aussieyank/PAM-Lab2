@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+<!--change to styles.css-->
+    <link rel="stylesheet" href="styles.css">
+    <!--move to bottom of body?-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <h1>Rachel B's Pixel</h1>
+
+  <h2>Choose Grid Size</h2>
+  <form id="sizePicker">
+    <div class="container">
+      <span id="height">Grid Height:</span>
+      <br>
+    <!--change type to number? and no max!-->
+        <input type="range" id="inputHeight" name="height" min="1" max="30" value="10">
+        <br>
+      <span id="height">Grid Width:</span>
+      <br>
+  <!--change type to number? and no max!-->
+        <input type="range" id="inputWidth" name="width" min="1" max="30" value="10">
+      <br>
+      <p>
+        <input type="submit" value="Create Grid">
+      </p>
+    </div>
+  </form>
+
+  <h2>Pick A Color</h2>
+  <input type="color" id="colorPicker">
+    <p>
+      <input type="reset" value="Reset Grid">
+    </p>
+
+  <div class="canvas">
+    <p>
+      <!--Apparently I need to add in pixelCanvas tr and td-->
+      <!--Also, adding <h2 Design Canvas seems another thing-->
+      <h2>Design Canvas</h2>
+      <table id="pixelCanvas"></table>
+    </p>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

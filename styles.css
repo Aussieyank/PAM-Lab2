@@ -1,0 +1,52 @@
+@import url('https://fonts.google.com/specimen/Fontdiner+Swanky');
+@font-face {
+    font-family: 'Crafty Girls';
+    src: url('Crafty Girls.ttf');
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Fontdiner Swanky', cursive;
+  font-size: 70px;
+  margin: 0.2em;
+  /*This were my add-ons*/
+  color: #00ff00;
+  text-shadow: 1px 1px 2px lime, 0 0 1em purple, 0 0 0.2em blue;
+}
+
+h2 {
+  /*I added margin 1em 0*/
+  margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+  margin-top: 0.5em;
+}
+
+/*It appears that it wants #pixelCanvas tr and td, not table*/
+table,
+tr,
+td {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+tr {
+  height: 20px;
+}
+
+td {
+  width: 20px;
+}
+
+/*change type to number?*/
+input[type="range"] {
+  width: 6em;
+}
